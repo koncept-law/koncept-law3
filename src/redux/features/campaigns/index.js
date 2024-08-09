@@ -70,7 +70,7 @@ export const getAllUsersThunkMiddleware = () => {
     try {
       dispatch(setLoader({ getLoader: true }));
 
-      // const response = await axios.get(`https://m.kcptl.in/account/get`);
+      // const response = await axios.get(`https://p3.kcptl.in/account/get`);
       const response = await axios.get(`/account/get`);
 
       if (response.status === 200) {
@@ -2346,7 +2346,7 @@ export const sendDocumentVaribleValuesThunkMiddleware = ({
       dispatch(setLoader({ loader: true }));
 
       // console.log("the mapped data variable api payload sending ", selectedVariablesValues, campaignName)
-      // const response = await axios.post("https://m.kcptl.in/docs/mergeMapped", {
+      // const response = await axios.post("https://p3.kcptl.in/docs/mergeMapped", {
       const response = await axios.post("/docs/mergeMapped", {
         selectedVariablesValues: selectedVariablesValues,
         // customizeData: docxVarValues,
@@ -3258,7 +3258,7 @@ export const downloadCampaignSinglePdfFileThunkMiddleware = ({ campaignName }) =
 
       // link.target = "_blank"
       // const link = document.createElement("a");
-      // link.href = `https://m.kcptl.in/docs/downloadpdf?campaignName=${campaignName}`
+      // link.href = `https://p3.kcptl.in/docs/downloadpdf?campaignName=${campaignName}`
       // link.target = "_blank";
       // document.body.appendChild(link);
       // link.click();
@@ -3943,7 +3943,7 @@ export const downloadDocumentCategorySinglePdfThunkMiddleware = ({ campaignName,
 
       // link.target = "_blank"
       // const link = document.createElement("a");
-      // link.href = `https://m.kcptl.in/docs/downloadpdf?campaignName=${campaignName}`
+      // link.href = `https://p3.kcptl.in/docs/downloadpdf?campaignName=${campaignName}`
       // link.target = "_blank";
       // document.body.appendChild(link);
       // link.click();

@@ -73,15 +73,15 @@ const CustomTableTitle = ({
         rootFolder = folderSplit[0];
         folder = folderSplit[1];
 
-        url1 = "https://k.ocpl.tech/api/deleteFolderDB";
-        url = "https://m.kcptl.in/api/deleteFolder";
+        url1 = "https://k.kcptl.in/api/deleteFolderDB";
+        url = "https://p3.kcptl.in/api/deleteFolder";
 
         await axios.post(url1, {
           folderName,
         });
       } else {
         folder = folderName;
-        url = "https://k.ocpl.tech/api/deleteFirebase";
+        url = "https://k.kcptl.in/api/deleteFirebase";
       }
 
       const response = await axios.post(url, {

@@ -33,7 +33,7 @@
 //         // console.log("add new account", data);
 //         try {
 //             dispatch(setLoader({ registerLoader: true }));
-//             const response = await axios.post(`https://m.kcptl.in/account/post`, data);
+//             const response = await axios.post(`https://p3.kcptl.in/account/post`, data);
 //             dispatch(logoutThunkMiddleware());
 //             navigate("/login");
 //             toastify({ msg: response.data.message, type: "success" });

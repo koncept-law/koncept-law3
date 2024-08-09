@@ -235,7 +235,7 @@ const CustomTableTitle = ({
 
   const getPriviousDataHandler = async () => {
     try {
-      const response = await axios.get(`https://k.ocpl.tech/api/previousData`);
+      const response = await axios.get(`https://k.kcptl.in/api/previousData`);
 
       if (response?.status === 200) {
         const data = await response.data;
@@ -253,7 +253,7 @@ const CustomTableTitle = ({
 
   const hardResetHandler = async () => {
     try {
-      const response = await axios.get(`https://k.ocpl.tech/api/stop`);
+      const response = await axios.get(`https://k.kcptl.in/api/stop`);
 
       if (response?.status === 200) {
         const data = await response.data;

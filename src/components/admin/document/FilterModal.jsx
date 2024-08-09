@@ -60,7 +60,7 @@ const FilterModal = ({ filterModal, toggleFilterModal }) => {
       if (["hdfc", "tracking"].includes(user?.profile)) {
         formData.append("rootFolder", user?.profile);
         const response = await axios.post(
-          `https://m.kcptl.in/api/search`,
+          `https://p3.kcptl.in/api/search`,
           formData,
           {
             headers: {
@@ -86,7 +86,7 @@ const FilterModal = ({ filterModal, toggleFilterModal }) => {
         }
       } else {
         const response = await axios.post(
-          `https://k.ocpl.tech/api/search`,
+          `https://k.kcptl.in/api/search`,
           formData,
           {
             headers: {
@@ -99,7 +99,7 @@ const FilterModal = ({ filterModal, toggleFilterModal }) => {
         );
 
         const response1 = await axios.post(
-          `https://m.kcptl.in/api/search`,
+          `https://p3.kcptl.in/api/search`,
           formData,
           {
             headers: {

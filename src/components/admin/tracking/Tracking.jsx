@@ -16,7 +16,7 @@ const Tracking = () => {
   useEffect(() => {
     const getUploadStatus = async () => {
       try {
-        const response = await axios.get("https://k.ocpl.tech/api/progress");
+        const response = await axios.get("https://k.kcptl.in/api/progress");
         setUploadProgressData(response.data);
       } catch (error) {
         console.log(error);

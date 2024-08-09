@@ -69,7 +69,7 @@ export const ExcelDataContextProvider = ({ children }) => {
         const folderSplit = folderName?.split("/");
         rootFolder = folderSplit[0];
         folder = folderSplit[1];
-        url = "https://m.kcptl.in/api/getFolderDataPdf";
+        url = "https://p3.kcptl.in/api/getFolderDataPdf";
       }
 
       const response = await axios.post(

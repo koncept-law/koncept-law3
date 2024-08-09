@@ -52,7 +52,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
   const getFolderList = async () => {
     try {
       setPending(true);
-      const response = await axios.get(`https://k.ocpl.tech/api/foldersName`, {
+      const response = await axios.get(`https://k.kcptl.in/api/foldersName`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("konceptLawToken")}`,
         },
@@ -110,7 +110,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
       if (selectedDocsFile && selectedExcelFile) {
         if (newFolder) {
           const response = await axios.get(
-            `https://k.ocpl.tech/api/foldersName`,
+            `https://k.kcptl.in/api/foldersName`,
             {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem(
@@ -131,7 +131,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
             console.log("we  are in not found Folder");
 
             await axios.post(
-              `https://k.ocpl.tech/api/updateMongoFolder`,
+              `https://k.kcptl.in/api/updateMongoFolder`,
               {
                 newFolder,
                 role: userRole,
@@ -173,7 +173,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
           );
 
           const response = await axios.post(
-            "https://m.kcptl.in/api/genatedDocsUpload",
+            "https://p3.kcptl.in/api/genatedDocsUpload",
             formData,
             {
               headers: {
@@ -206,7 +206,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
           const intervalId = setInterval(async () => {
             try {
               const response = await axios.post(
-                "https://m.kcptl.in/api/progressBarServer",
+                "https://p3.kcptl.in/api/progressBarServer",
                 {
                   userEmail: user?.email,
                 },
@@ -267,7 +267,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
           );
 
           const response = await axios.post(
-            "https://k.ocpl.tech/api/genratedDocsUploadFirebase",
+            "https://k.kcptl.in/api/genratedDocsUploadFirebase",
             formData,
             {
               headers: {
@@ -300,7 +300,7 @@ const UploadModal = ({ toggle, modal, progressData, setProgressData }) => {
           const intervalId = setInterval(async () => {
             try {
               const response = await axios.get(
-                "https://k.ocpl.tech/api/progressBar",
+                "https://k.kcptl.in/api/progressBar",
                 {
                   headers: {
                     Authorization: `Bearer ${localStorage.getItem(

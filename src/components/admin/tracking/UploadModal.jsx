@@ -29,7 +29,7 @@ const UploadModal = ({ modal, toggle, setUploadProgressData }) => {
       formData.append("typeOfData", typeOfData);
 
       const response = await axios.post(
-        "https://k.ocpl.tech/api/convert",
+        "https://k.kcptl.in/api/convert",
         formData
       );
 
@@ -41,14 +41,14 @@ const UploadModal = ({ modal, toggle, setUploadProgressData }) => {
 
       const intervalId = setInterval(async () => {
         try {
-          const response1 = await axios.get("https://k.ocpl.tech/api/progress");
+          const response1 = await axios.get("https://k.kcptl.in/api/progress");
           setUploadProgressData(response1.data);
 
           if (response1.data.totalData === response1.data.progress) {
             clearInterval(intervalId);
 
             const response2 = await axios.get(
-              `https://k.ocpl.tech/api/previousData`
+              `https://k.kcptl.in/api/previousData`
             );
 
             if (response2.status === 200) {

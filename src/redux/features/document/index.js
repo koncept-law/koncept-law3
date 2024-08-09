@@ -38,10 +38,10 @@ export default documentSlice.reducer;
 //         const folderSplit = folderName?.split("/");
 //         rootFolder = folderSplit[0];
 //         folder = folderSplit[1];
-//         url = "https://m.kcptl.in/api/getFolderData";
+//         url = "https://p3.kcptl.in/api/getFolderData";
 //       } else {
 //         folder = folderName;
-//         url = "https://k.ocpl.tech/api/folder";
+//         url = "https://k.kcptl.in/api/folder";
 //       }
 
 //       const response = await axios.post(
@@ -101,10 +101,10 @@ export const getFolderDataThunkMiddleware = ({ folderName, user }) => {
         const folderSplit = folderName?.split("/");
         rootFolder = folderSplit[0];
         folder = folderSplit[1];
-        url = "https://m.kcptl.in/api/getFolderData";
+        url = "https://p3.kcptl.in/api/getFolderData";
       } else {
         folder = folderName;
-        url = "https://k.ocpl.tech/api/folder";
+        url = "https://k.kcptl.in/api/folder";
       }
 
       const response = await axios.post(

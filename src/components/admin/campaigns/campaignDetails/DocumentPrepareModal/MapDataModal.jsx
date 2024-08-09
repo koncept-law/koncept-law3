@@ -47,7 +47,7 @@ const MapDataModal = ({ isMapDataModal, setIsMapDataModal, campaignType }) => {
         const getDocumentVariables = async () => {
             try {
                 dispatch(setLoader({ loader: true }))
-                const response = await axios.post("https://m.kcptl.in/docs/getPlaceholders", { campaignName: campaignDetails.name },
+                const response = await axios.post("https://p3.kcptl.in/docs/getPlaceholders", { campaignName: campaignDetails.name },
                     { signal: abortController.signal }
                 );
 

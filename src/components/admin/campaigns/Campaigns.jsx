@@ -29,7 +29,7 @@ const Campaigns = () => {
   //     return;
   //   }
   //   const getAllUser = async () => {
-  //     const response = await axios.get(`https://m.kcptl.in/account/get`);
+  //     const response = await axios.get(`https://p3.kcptl.in/account/get`);
   //     setAllUsers(response.data)
   //   }
 

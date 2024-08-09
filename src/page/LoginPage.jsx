@@ -40,7 +40,7 @@ const LoginPage = () => {
 
             if (loginPage === true) {
                 dispatch(setLoader({ loginLoader: true }));
-                const response = await axios.post(`https://k.ocpl.tech/api/login`, validData);
+                const response = await axios.post(`https://k.kcptl.in/api/login`, validData);
                 const { token } = response.data;
                 localStorage.setItem("konceptLawToken", token);
                 const user = await jwtDecode(localStorage.getItem("konceptLawToken"))
@@ -57,7 +57,7 @@ const LoginPage = () => {
             else
                 if (registerPage === true) {
                     dispatch(setLoader({ registerLoader: true }));
-                    const response = await axios.post(`https://m.kcptl.in/account/post`, validData);
+                    const response = await axios.post(`https://p3.kcptl.in/account/post`, validData);
                     // console.log(response)
                     navigate("/login")
                     toastify({ msg: response.data.message, type: "success" });

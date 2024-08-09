@@ -3,13 +3,13 @@ import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const DocumentViewer = ({ fileUrl, data }) => {
     // const docs = [{ uri: fileUrl }];
-    // const docs = [{ uri: "https://m.kcptl.in/campaign/download/dipesh/57220006163109.pdf" }];
-    // const docs = [{ uri: "https://m.kcptl.in/docs/docsBuffer/doctemplet.docx" }];
+    // const docs = [{ uri: "https://p3.kcptl.in/campaign/download/dipesh/57220006163109.pdf" }];
+    // const docs = [{ uri: "https://p3.kcptl.in/docs/docsBuffer/doctemplet.docx" }];
 
     if (fileUrl === "") return <div className="h-full w-full bg-white" >on file path found</div>
     const docs = [
         {
-            uri: `https://m.kcptl.in/docs/docsBuffer/${fileUrl}`,
+            uri: `https://p3.kcptl.in/docs/docsBuffer/${fileUrl}`,
             fileType: "docx",
             fileName: data?.name,
         }
